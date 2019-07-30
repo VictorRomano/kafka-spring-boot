@@ -1,10 +1,10 @@
 # Kafka Spring Boot
 Project with setup example to use Kafka, Avro and Schema Registry with Spring Boot.
 
-# Running the Project
+# Testing the Project
 
-## Environment
-Start Kafka with using Landoop's `fast-data-env` Docker container.
+## Environment Setup
+Start Kafka with using Landoop's [`fast-data-env`](https://hub.docker.com/r/landoop/fast-data-dev) Docker container.
 ```
 docker run --name kafka \
    --net=host \
@@ -14,7 +14,16 @@ docker run --name kafka \
 
 ## Build
 ```
-$ cd kafka-spring-boot
-$ ./mvnw clean package
-$ java -jar target/kafka-spring-boot-*.jar
+cd kafka-spring-boot
+./mvnw clean package
+```
+
+## Run
+```
+java -jar target/kafka-spring-boot-*.jar
+```
+
+## Test
+```
+curl -X POST http://localhost:8080/sample
 ```
