@@ -66,8 +66,8 @@
                 <version>1.9.0</version>
                 <executions>
                     <execution>
-<!--                        <phase>none</phase>-->
-                        <phase>generate-sources</phase>
+                        <phase>none</phase>
+<!--                        <phase>generate-sources</phase>-->
                         <goals>
                             <goal>schema</goal>
                         </goals>
