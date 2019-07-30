@@ -1,0 +1,12 @@
+{
+  "type": "record",
+  "namespace": "com.victorromano.avro.kafkaspringboot",
+  "name": "Key",
+  "fields": [
+    {
+      "name": "key",
+      "type": "string",
+      "doc": "Some random key"
+    }
+  ]
+}

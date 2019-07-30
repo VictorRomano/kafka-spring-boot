@@ -1,0 +1,12 @@
+{
+  "type": "record",
+  "namespace": "com.victorromano.avro.kafkaspringboot",
+  "name": "Value",
+  "fields": [
+    {
+      "name": "message",
+      "type": "string",
+      "doc": "Some random value"
+    }
+  ]
+}
