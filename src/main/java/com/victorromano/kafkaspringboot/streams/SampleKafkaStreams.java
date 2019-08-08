@@ -7,9 +7,11 @@ import org.apache.kafka.streams.kstream.KStream;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Bean;
+import org.springframework.kafka.annotation.EnableKafkaStreams;
 import org.springframework.stereotype.Component;
 
 @Component
+@EnableKafkaStreams
 public class SampleKafkaStreams {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(SampleKafkaStreams.class);
