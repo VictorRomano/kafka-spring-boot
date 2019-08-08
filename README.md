@@ -24,6 +24,16 @@ java -jar target/kafka-spring-boot-*.jar
 ```
 
 ## Test
+To generate random messages to topic:
 ```
 curl -X POST http://localhost:8080/sample
+```
+To your own message to topic:
+```
+curl -X POST \
+  http://localhost:8080/message \
+  -H 'Content-Type: application/json' \
+  -d '{
+        "message": "my own message"
+      }'
 ```
