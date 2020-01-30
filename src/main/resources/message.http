@@ -1,0 +1,26 @@
+POST http://localhost:8080/message/topic1
+Content-Type: application/json
+
+{
+  "message": "abc"
+}
+
+###
+
+POST http://localhost:8080/message/topic2
+Content-Type: application/json
+
+{
+  "message": "ana2"
+}
+
+###
+
+POST http://localhost:8080/message/topic3
+Content-Type: application/json
+
+{
+  "message": "ana2"
+}
+
+###
